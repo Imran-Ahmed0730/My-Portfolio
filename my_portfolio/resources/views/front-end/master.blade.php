@@ -9,14 +9,25 @@
     @include('front-end.include.style')
 </head>
 <body>
-@include('front-end.include.header')
+
 <div class="container-fluid">
+    <div class="row header">
+        <div class="col-md-12">
+            @include('front-end.include.header')
+        </div>
+    </div>
 
     <main>
-        @yield('content')
+       <div class="container">
+           @yield('content')
+       </div>
     </main>
 
-    @include('front-end.include.footer')
+    <div class="row footer">
+        <div class="col-md-12">
+            @include('front-end.include.footer')
+        </div>
+    </div>
 
 </div>
 @include('front-end.include.script')
