@@ -39,13 +39,10 @@
                     <div class="comment-btn text-center mb-3">
                         <a href="" onclick="event.preventDefault(); hide()" id="comment_btn" class="btn btn-outline-light">Some Recent Feedbacks</a>
                     </div>
-                    <div class="" id="comments" style="">
+                    <div class="" id="comments" style="display: none">
                         <div class="card comment-card mb-3" style="border: 0.5px solid white !important; background-color: #121212 !important;">
                             <div class="card-body py-0">
                                 <div class="author-date">
-                                    <div class="author">
-                                        <img src="assets/images/person1.jpg" alt="" class="rounded-circle">
-                                    </div>
                                     <div class="inner-author-date">
                                         <div class="author">
                                             <span class="">Ana Grainger</span>
