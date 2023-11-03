@@ -1,6 +1,17 @@
-<script src="{{'front-end-assets'}}/js/jquery-3.6.3.min.js"></script>
-<script src="{{'front-end-assets'}}/js/bootstrap.bundle.min.js"></script>
-<script src="{{'front-end-assets'}}/js/owl.carousel.js"></script>
+<script src="{{asset('/')}}/front-end-assets//js/jquery-3.6.3.min.js"></script>
+<script src="{{asset('/')}}/front-end-assets//js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('/')}}/front-end-assets//js/owl.carousel.js"></script>
+<script>
+    function hide() {
+        var x = document.getElementById("comments");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+</script>
 <script>
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel();

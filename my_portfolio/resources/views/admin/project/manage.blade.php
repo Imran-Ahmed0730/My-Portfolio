@@ -30,8 +30,15 @@
                                 <tr>
                                     <td>{{$i++}}.</td>
                                     <td>{{$project->title}}</td>
-                                    <td>{{$project->client_id}}</td>
-                                    <td class="{{$project->status == 0? 'text-danger':'text-success'}} text-end">{{$project->status == 0? 'Unpublished': 'Published'}}</td>
+                                    <td>
+                                        @if($project->client_id == 0)
+                                            Self
+                                        @else
+                                            {{$project->client->name}}
+                                        @endif
+                                        </td>
+                                    <td class="{{$project->status == 0? 'text-danger':'text-success'}} text-end">
+                                        {{$project->status == 0? 'Unpublished': 'Published'}}</td>
                                     <td class="text-end " >
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-outline-info"><i class="las la-info" style="font-size: 18px !important;"></i></a>

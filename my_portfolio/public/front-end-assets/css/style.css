@@ -34,12 +34,7 @@ nav ul li a:hover{
 /*}*/
 
 /*------home-----*/
-#home .intro-para{
-    background-image: url("../public/front-end-assets/img/bg-1.png") !important;
-}
-/*.intro-para{*/
-/*    position: relative;*/
-/*}*/
+
 .intro{
     /*position: absolute;*/
     /*top: 50%;*/
@@ -110,7 +105,7 @@ span{
     font-size: 18px;
 }
 .project:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .project:hover .layer{
     height: 100%;
@@ -162,3 +157,21 @@ i{
 .copyright{
     color:#A9A9A9;
 }
+
+/*----project details ----*/
+.parallax {
+    /* The image used */
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-img{
+    height: 50% !important;
+}
+

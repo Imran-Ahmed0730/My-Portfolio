@@ -22,16 +22,18 @@
                                         <option value="2">Dynamic Web Application</option>
                                         <option value="3">Backend Development</option>
                                         <option value="4">WordPress</option>
-
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="username">Client</label>
+                                    <label for="username">Client Name</label>
                                     <select name="client_id" id="" class="form-control">
                                         <option value="">------Select Client------</option>
-                                        <option value="0">Self</option>
+                                        <option value="1">Self</option>
+                                        @foreach($clients as $client)
+                                            <option value="{{$client->id}}">{{$client->name}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

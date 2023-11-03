@@ -33,6 +33,9 @@
                                     <select name="client_id" id="" class="form-control">
                                         <option value="">------Select Client------</option>
                                         <option value="0" {{$project->client_id == 0 ? 'selected':''}}>Self</option>
+                                        @foreach($clients as $client)
+                                            <option value="{{$client->id}}" {{$project->client_id == $client->id ? 'selected':''}}>{{$client->name}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

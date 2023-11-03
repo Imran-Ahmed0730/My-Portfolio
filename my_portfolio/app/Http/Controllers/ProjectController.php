@@ -12,7 +12,7 @@ class ProjectController extends Controller
     private $project;
     public function index(){
         return view('admin.project.add', [
-//            'clients'=>Client::all()
+            'clients'=>Client::all()
         ]);
     }
     public function add(Request$request){
@@ -29,7 +29,8 @@ class ProjectController extends Controller
     }
     public function edit($id){
         return view('admin.project.edit', [
-            'project'=>Project::find($id)
+            'project'=>Project::find($id),
+            'clients'=>Client::all()
         ]);
     }
     public function update(Request $request){

@@ -37,6 +37,7 @@ class Project extends Model
         self::$project->backend         = $request->backend;
         self::$project->status          = $request->status;
         self::$project->others          = $request->others;
+        self::$project->client_id       = $request->client_id;
 
         self::$project->save();
         return self::$project;
@@ -53,5 +54,8 @@ class Project extends Model
 
     public function client(){
         return $this->belongsTo(Client::class);
+    }
+    public function projectImage(){
+        return $this->hasMany(ProjectImage::class);
     }
 }

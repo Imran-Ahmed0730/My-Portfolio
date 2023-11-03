@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('frontend')->nullable();
             $table->string('backend')->nullable();
             $table->tinyInteger('status')->default(0);
+            $table->integer('client_id')->default(0);
             $table->string('others')->nullable();
             $table->timestamps();
         });

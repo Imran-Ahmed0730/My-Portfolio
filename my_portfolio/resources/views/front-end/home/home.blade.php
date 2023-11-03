@@ -5,7 +5,7 @@
 @section('content')
     <div class="row" id="home" style="background-image: url({{asset('/')}}/front-end-assets/img/bg-1.png); background-repeat: no-repeat; background-size: cover;">
         <div class="col-md-12 intro-para">
-            <div class="intro px-2">
+            <div class="intro">
                 <h4>Web Developer</h4>
                 <h1>Hi, I am Imran <br> <span class="text-danger">Ahmed </span>From Bangladesh</h1>
             </div>
@@ -98,21 +98,27 @@
             <h1 class="mb-4" align="center">My Works</h1>
         </div>
         <div class="row mb-5" >
-            <div class="col-md-12">
-                <div class="owl-carousel owl-theme">
-                    <div class="item project">
-                        <a href="">
-                            <div class="card card-body" style="border-radius: 0.375rem">
-                                <img src="{{asset('front-end-assets')}}/img/project-1.png" class="img-fluid" alt="...">
-                                <div class="layer">
-                                    <h3>DIU NLP and Machine Learning Lab</h3>
-                                    <i class="bi bi-box-arrow-up-right" style="font-size: 40px; font-weight: bold; color: white"></i>
-                                </div>
+            @foreach($projects as $project)
+                <div class="col-md-3">
+                    <div class="card card-body project">
+                        <a href="{{route('project.details', ['id'=> $project->id])}}">
+                            <img src="{{$project->image}}" class="img-fluid" alt="...">
+                            <div class="layer">
+                                <h3>{{$project->title}}</h3>
+                                <i class="bi bi-box-arrow-up-right" style="font-size: 40px; font-weight: bold; color: white"></i>
                             </div>
                         </a>
                     </div>
                 </div>
-            </div>
+            @endforeach
+
+{{--            <div class="col-md-12">--}}
+{{--                <div class="owl-carousel owl-theme">--}}
+{{--                    @foreach($projects as $project)--}}
+{{--
+{{--                    @endforeach--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
     </div>
 @endsection

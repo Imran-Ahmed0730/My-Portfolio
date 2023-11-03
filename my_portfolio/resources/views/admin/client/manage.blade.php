@@ -22,7 +22,6 @@
                                 <th>Email</th>
                                 <th class="">Phone Number</th>
                                 <th>Address</th>
-                                <th>Project Name</th>
                                 <th class="text-center">Action</th>
                             </tr>
                             </thead>
@@ -35,7 +34,6 @@
                                     <td>{{$client->email}}</td>
                                     <td>{{$client->phone_number}}</td>
                                     <td>{{$client->address}}</td>
-                                    <td>{{$client->project_id}}</td>
                                     <td class="text-end " >
                                         <div class="btn-group">
                                             <a href="#" class="btn btn-outline-info"><i class="las la-info" style="font-size: 18px !important;"></i></a>

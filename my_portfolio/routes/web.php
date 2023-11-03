@@ -8,6 +8,7 @@ use App\Http\Controllers\ClientController;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('project/Details/{id}', [HomeController::class, 'details'])->name('project.details');
 
 Route::middleware([
     'auth:sanctum',
@@ -23,7 +24,7 @@ Route::middleware([
     Route::post('project/update', [ProjectController::class, 'update'])->name('project.update');
     Route::post('project/remove', [ProjectController::class, 'remove'])->name('project.remove');
 
-    //Project Module
+    //Client Module
     Route::get('client/add', [ClientController::class, 'index'])->name('client.add');
     Route::post('client/add', [ClientController::class, 'add'])->name('client.new');
     Route::get('client/manage', [ClientController::class, 'manage'])->name('client.manage');

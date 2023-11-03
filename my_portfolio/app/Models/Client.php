@@ -21,7 +21,6 @@ class Client extends Model
         self::$client->email        = $request->email;
         self::$client->address      = $request->address;
         self::$client->phone_number = $request->phone_number;
-        self::$client->project_id   = $request->project_id;
 
         self::$client->save();
     }
@@ -31,6 +30,6 @@ class Client extends Model
         self::$client->delete();
     }
     public function project(){
-        return $this->belongsTo(Project::class);
+        return $this->hasMany(Project::class);
     }
 }

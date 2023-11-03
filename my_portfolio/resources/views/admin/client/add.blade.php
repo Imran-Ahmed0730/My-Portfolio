@@ -37,19 +37,6 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="username">Project Name</label>
-                                    <select name="project_id" id="" class="form-control">
-                                        <option value="">------Select Project------</option>
-                                        @foreach($projects as $project)
-                                            <option value="{{$project->id}}">{{$project->title}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="mb-3">
                                     <label for="useremail">Address</label>
                                     <textarea rows="5" class="form-control" name="address"></textarea>
                                 </div>
