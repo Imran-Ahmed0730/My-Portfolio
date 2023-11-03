@@ -8,26 +8,32 @@
         <div class="main-icon-menu-body">
             <div class="position-reletive h-100" data-simplebar style="overflow-x: hidden;">
                 <ul class="nav nav-tabs" role="tablist" id="tab-menu">
-                    <li class="nav-item active" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard" data-bs-trigger="hover">
-                        <a href="#Dashboard" id="dashboard-tab" class="nav-link">
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard" data-bs-trigger="hover">
+                        <a href="#MetricaDashboard" id="dashboard-tab" class="nav-link">
                             <i class="ti ti-smart-home menu-icon"></i>
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="My Projects" data-bs-trigger="hover">
-                        <a href="#project" id="project-tab" class="nav-link">
-                            <i class="ti ti-activity menu-icon"></i>
+                        <a href="#MetricaApps" id="apps-tab" class="nav-link">
+                            <i class="ti ti-device-desktop menu-icon"></i>
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
 
-                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Experience" data-bs-trigger="hover">
-                        <a href="#experience" id="experience-tab" class="nav-link">
-                            <i class="ti ti-star menu-icon"></i>
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Uikit" data-bs-trigger="hover">
+                        <a href="#MetricaUikit" id="uikit-tab" class="nav-link">
+                            <i class="ti ti-medal menu-icon"></i>
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
 
-                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Skills" data-bs-trigger="hover">
-                        <a href="#skill" id="skill-tab" class="nav-link">
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Pages" data-bs-trigger="hover">
+                        <a href="#MetricaPages" id="pages-tab" class="nav-link">
                             <i class="ti ti-chart-bar menu-icon"></i>
+                        </a><!--end nav-link-->
+                    </li><!--end nav-item-->
+
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Authentication" data-bs-trigger="hover">
+                        <a href="#MetricaAuthentication" id="authentication-tab" class="nav-link">
+                            <i class="ti ti-user menu-icon"></i>
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
                 </ul><!--end nav-->
@@ -53,22 +59,23 @@
         </div><!--end topbar-left-->
         <!--end logo-->
         <div class="menu-body navbar-vertical tab-content" data-simplebar>
-            <div id="Dashboard" class="main-icon-menu-pane tab-pane" role="tabpanel"
-                 aria-labelledby="dashboard-tab">
+            <div id="MetricaDashboard" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                 aria-labelledby="dasboard-tab">
                 <div class="title-box">
-                    <h2 class="menu-title">Dashboard</h2>
+                    <h6 class="menu-title">Dashboard</h6>
                 </div>
+
                 <ul class="nav flex-column">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Dashboard</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('dashboard')}}">Dashboard</a>
                     </li><!--end nav-item-->
                 </ul><!--end nav-->
             </div><!-- end Dashboards -->
 
-            <div id="project" class="main-icon-menu-pane tab-pane" role="tabpanel"
-                 aria-labelledby="project-tab">
+            <div id="MetricaApps" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                 aria-labelledby="apps-tab">
                 <div class="title-box">
-                    <h2 class="menu-title">My Projects</h2>
+                    <h6 class="menu-title">Project Module</h6>
                 </div>
 
                 <div class="collapse navbar-collapse" id="sidebarCollapse">
@@ -77,116 +84,137 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#sidebarAnalytics" data-bs-toggle="collapse" role="button"
                                aria-expanded="false" aria-controls="sidebarAnalytics">
-                                Project
+                                My Projects
                             </a>
                             <div class="collapse " id="sidebarAnalytics">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a href="analytics-customers.html" class="nav-link ">Add Project</a>
+                                        <a href="{{route('project.add')}}" class="nav-link ">Add Project</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
-                                        <a href="analytics-reports.html" class="nav-link ">Manage Project</a>
+                                        <a href="{{route('project.manage')}}" class="nav-link ">Manage Project</a>
                                     </li><!--end nav-item-->
                                 </ul><!--end nav-->
                             </div><!--end sidebarAnalytics-->
                         </li><!--end nav-item-->
-
                         <li class="nav-item">
-                            <a class="nav-link" href="#sidebarCrypto" data-bs-toggle="collapse" role="button"
-                               aria-expanded="false" aria-controls="sidebarCrypto">
-                                Client
+                            <a class="nav-link" href="#sidebarAdvancedUI" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="sidebarAdvancedUI">
+                                Client Module
                             </a>
-                            <div class="collapse " id="sidebarCrypto">
+                            <div class="collapse " id="sidebarAdvancedUI">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="crypto-exchange.html">Add Client</a>
+                                        <a class="nav-link" href="{{route('client.add')}}">Add Client</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
-                                        <a class="nav-link" href="crypto-wallet.html">Manage Client</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="crypto-wallet.html">Client Reviews</a>
+                                        <a class="nav-link" href="{{route('client.manage')}}">Manage Client</a>
                                     </li><!--end nav-item-->
                                 </ul><!--end nav-->
-                            </div><!--end sidebarCrypto-->
+                            </div><!--end sidebarAdvancedUI-->
+                        </li><!--end nav-item-->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="sidebarForms">
+                                Review Module
+                            </a>
+                            <div class="collapse " id="sidebarForms">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="forms-elements.html">Manage Review</a>
+                                    </li><!--end nav-item-->
+                                </ul><!--end nav-->
+                            </div><!--end sidebarForms-->
                         </li><!--end nav-item-->
                     </ul><!--end navbar-nav--->
                 </div><!--end sidebarCollapse-->
             </div><!-- end Crypto -->
 
-            <div id="experience" class="main-icon-menu-pane  tab-pane" role="tabpanel"
+            <div id="MetricaUikit" class="main-icon-menu-pane  tab-pane" role="tabpanel"
                  aria-labelledby="uikit-tab">
                 <div class="title-box">
-                    <h2 class="menu-title">My Experience</h2>
+                    <h6 class="menu-title">Expertise</h6>
                 </div>
                 <div class="collapse navbar-collapse" id="sidebarCollapse_2">
                     <!-- Navigation -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sidebarEmployment" data-bs-toggle="collapse" role="button"
-                               aria-expanded="false" aria-controls="sidebarCRM">
-                                Employment
+                            <a class="nav-link" href="#sidebarAdvancedUI" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="sidebarAdvancedUI">
+                                Training Module
                             </a>
-                            <div class="collapse " id="sidebarEmployment">
+                            <div class="collapse " id="sidebarAdvancedUI">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="crm-contacts.html">Add Employment</a>
+                                        <a class="nav-link" href="advanced-animation.html">Add Certification</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
-                                        <a class="nav-link" href="crm-opportunities.html">Manage Employment</a>
+                                        <a class="nav-link" href="advanced-clipboard.html">Manage Certification</a>
                                     </li><!--end nav-item-->
+
                                 </ul><!--end nav-->
-                            </div><!--end sidebarCRM-->
+                            </div><!--end sidebarAdvancedUI-->
                         </li><!--end nav-item-->
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#sidebarCRM" data-bs-toggle="collapse" role="button"
-                               aria-expanded="false" aria-controls="sidebarCRM">
-                                Training & Certification
+                            <a class="nav-link" href="#sidebarForms" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="sidebarForms">
+                                Educational Qualification
                             </a>
-                            <div class="collapse " id="sidebarCRM">
+                            <div class="collapse " id="sidebarForms">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="crm-contacts.html">Add Certification</a>
+                                        <a class="nav-link" href="forms-elements.html">Add Degree</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
-                                        <a class="nav-link" href="crm-opportunities.html">Manage Certification</a>
+                                        <a class="nav-link" href="forms-advanced.html">Manage Degree</a>
                                     </li><!--end nav-item-->
                                 </ul><!--end nav-->
-                            </div><!--end sidebarCRM-->
-                        </li><!--end nav-item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sidebarEdu" data-bs-toggle="collapse" role="button"
-                               aria-expanded="false" aria-controls="sidebarCRM">
-                                Education
-                            </a>
-                            <div class="collapse " id="sidebarEdu">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="crm-contacts.html">Add Degree</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="crm-opportunities.html">Manage Degree</a>
-                                    </li><!--end nav-item-->
-                                </ul><!--end nav-->
-                            </div><!--end sidebarCRM-->
+                            </div><!--end sidebarForms-->
                         </li><!--end nav-item-->
                     </ul><!--end navbar-nav--->
                 </div><!--end sidebarCollapse_2-->
             </div><!-- end Others -->
 
-            <div id="skill" class="main-icon-menu-pane tab-pane" role="tabpanel" aria-labelledby="pages-tab">
+            <div id="MetricaPages" class="main-icon-menu-pane tab-pane" role="tabpanel" aria-labelledby="pages-tab">
                 <div class="title-box">
-                    <h2 class="menu-title">Skills</h2>
+                    <h6 class="menu-title">Pages</h6>
+                </div>
+                <div class="collapse navbar-collapse" id="sidebarCollapse_3">
+                    <!-- Navigation -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sidebarElements" data-bs-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="sidebarElements">
+                                Skill Module
+                            </a>
+                            <div class="collapse " id="sidebarElements">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-alerts.html">Add Skill</a>
+                                    </li><!--end nav-item-->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="ui-avatar.html">Manage Skill</a>
+                                    </li><!--end nav-item-->
+                                </ul><!--end nav-->
+                            </div><!--end sidebarElements-->
+                        </li><!--end nav-item-->
+                    </ul><!--end navbar-nav--->
+                </div><!--end sidebarCollapse_2-->
+            </div><!-- end Pages -->
+
+            <div id="MetricaAuthentication" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                 aria-labelledby="authentication-tab">
+                <div class="title-box">
+                    <h6 class="menu-title">User Module</h6>
                 </div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="pages-profile.html">Add Skills</a>
+                        <a class="nav-link" href="auth-login.html">Manage Personal Info</a>
                     </li><!--end nav-item-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages-tour.html">Manage Skills</a>
-                    </li>
                 </ul><!--end nav-->
-            </div><!-- end Pages -->
+            </div><!-- end Authentication-->
         </div>
         <!--end menu-body-->
     </div><!-- end main-menu-inner-->

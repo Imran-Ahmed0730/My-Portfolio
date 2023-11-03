@@ -3,7 +3,7 @@
     Imran Ahmed Portfolio
 @endsection
 @section('content')
-    <div class="row" id="home" style="background-image: url(../public/front-end-assets/img/bg-1.png); background-repeat: no-repeat; background-size: cover;">
+    <div class="row" id="home" style="background-image: url({{asset('/')}}/front-end-assets/img/bg-1.png); background-repeat: no-repeat; background-size: cover;">
         <div class="col-md-12 intro-para">
             <div class="intro px-2">
                 <h4>Web Developer</h4>
