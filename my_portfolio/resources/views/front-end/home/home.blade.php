@@ -3,9 +3,9 @@
     Imran Ahmed Portfolio
 @endsection
 @section('content')
-    <div class="row" id="home" style="background-image: url(../public/front-end-assets/img/bg-1.png);">
+    <div class="row" id="home" style="background-image: url(../public/front-end-assets/img/bg-1.png); background-repeat: no-repeat; background-size: cover;">
         <div class="col-md-12 intro-para">
-            <div class="intro">
+            <div class="intro px-2">
                 <h4>Web Developer</h4>
                 <h1>Hi, I am Imran <br> <span class="text-danger">Ahmed </span>From Bangladesh</h1>
             </div>
@@ -15,7 +15,7 @@
 {{--        </div>--}}
     </div>
 {{--        About Section?--}}
-    <div class="row mt-5">
+    <div class="row mt-3">
         <div class="col-md-4">
             <img src="{{asset('front-end-assets')}}/img/about-me.jpg" alt="" class="img-fluid abt-img my-4">
         </div>

@@ -1,9 +1,6 @@
-<footer class="footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 footer-copyright text-center">
-                <p class="mb-0">Copyright 2022 © Zeta theme by pixelstrap  </p>
-            </div>
-        </div>
-    </div>
+<footer class="footer text-center text-sm-start">
+    &copy; <script>
+        document.write(new Date().getFullYear())
+    </script> Metrica <span class="text-muted d-none d-sm-inline-block float-end">Crafted with <i
+            class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
 </footer>
