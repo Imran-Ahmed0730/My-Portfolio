@@ -101,7 +101,7 @@
             @foreach($projects as $project)
                 <div class="col-md-3">
                     <div class="card card-body project">
-                        <a href="{{route('project.details', ['id'=> $project->id])}}">
+                        <a href="{{$project->project_url}}" target="_blank">
                             <img src="{{$project->image}}" class="img-fluid" alt="...">
                             <div class="layer">
                                 <h3>{{$project->title}}</h3>
@@ -111,14 +111,58 @@
                     </div>
                 </div>
             @endforeach
-
-{{--            <div class="col-md-12">--}}
-{{--                <div class="owl-carousel owl-theme">--}}
-{{--                    @foreach($projects as $project)--}}
-{{--
-{{--                    @endforeach--}}
-{{--                </div>--}}
-{{--            </div>--}}
+                <div class="row mt-3">
+                    <div class="col-md-12" align="center">
+                        <a href="" onclick="event.preventDefault(); hide()" id="comment_btn" class="btn review-btn">Review My Work</a>
+                    </div>
+                </div>
+                <div class="row my-5" id="comments" style="display: none">
+                    <div class="col-md-10 offset-1">
+                        <div class="card card-body" style="background-color: #121212 !important;">
+                            <div class="col-md-10 offset-1">
+                                <h2>Leave A Review</h2>
+                                <form action="{{route('review')}}" onsubmit="return validate()" method="post">
+                                    @csrf
+                                    <div class="form-group row mb-3">
+                                        <label for="name" class="col-sm-2 col-form-label">Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="reviewerName" name="name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label for="name" class="col-sm-2 col-form-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label for="name" class="col-sm-2 col-form-label">Project</label>
+                                        <div class="col-sm-10">
+                                            <select name="project_id" id="" class="form-control">
+                                                <option value="" selected>Select Project</option>
+                                                @foreach($projects as $project)
+                                                    <option value="{{$project->id}}">{{$project->title}}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label for="message" class="col-sm-2 col-form-label">Comment</label>
+                                        <div class="col-sm-10">
+                                            <textarea  class="form-control" rows="5" id="comment" name="comment" placeholder="Your Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="message" class="col-sm-2 col-form-label"></label>
+                                        <div class="col-sm-10">
+                                            <button type="submit" class="sub-btn btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 @endsection

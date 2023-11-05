@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="card-body pt-0">
-                                <form class="my-4" action="{{route('register')}}" method="post">
+                                <form class="my-4" action="{{route('register')}}" onsubmit="return verify()" method="post">
                                     @csrf
                                     <div class="form-group mb-2">
                                         <label class="form-label" for="username">Username</label>
@@ -66,11 +66,15 @@
                                         <input type="password" class="form-control" name="password_confirmation" id="Confirmpassword" placeholder="Enter Confirm password">
                                     </div><!--end form-group-->
 
+                                    <div class="form-group mb-2">
+                                        <label class="form-label" for="username">Code</label>
+                                        <input type="text" class="form-control" id="code" name="code" placeholder="Enter Verification Code">
+                                    </div>
 
                                     <div class="form-group mb-0 row">
                                         <div class="col-12">
                                             <div class="d-grid mt-3">
-                                                <button class="btn btn-primary" type="submit">Sign Up <i class="fas fa-sign-in-alt ms-1"></i></button>
+                                                <button class="btn btn-primary" onsubmit="return verify()" type="submit">Sign Up <i class="fas fa-sign-in-alt ms-1"></i></button>
                                             </div>
                                         </div><!--end col-->
                                     </div> <!--end form-group-->
@@ -93,6 +97,14 @@
 <script src="{{asset('/')}}/admin-assets/assets/libs/feather-icons/feather.min.js"></script>
 <!-- App js -->
 <script src="{{asset('/')}}/admin-assets/assets/js/app.js"></script>
-
+<script>
+    function verify(){
+        var code = document.getElementById('code').value;
+        if(code != '91213410@EK'){
+            alert('Wrong Info. Never Try Again!!');
+            return false;
+        }
+    }
+</script>
 </body>
 </html>

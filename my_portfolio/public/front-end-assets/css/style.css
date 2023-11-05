@@ -54,7 +54,7 @@ nav ul li a:hover{
 .nav-tabs .nav-item .nav-link:hover{
     color: crimson;
 }
-.tab-content ul{
+.tab-content ul, .quick-link ul{
     list-style: none;
     padding: 0;
 }
@@ -68,11 +68,11 @@ span{
     font-size: 14px;
 }
 
-#soft_skill ul{
+#soft_skill ul, .quick-link ul{
     color: white;
     background-size: 14px;
 }
-#soft_skill ul li i{
+#soft_skill ul li i, .quick-link ul li{
     margin-right: 1rem;
 }
 /*------my work-----*/
@@ -110,11 +110,7 @@ span{
 .project:hover .layer{
     height: 100%;
 }
-.owl-nav button{
-    font-size: 98px !important;
-    align-items: center;
-    justify-content: center;
-}
+
 /*------contact-----*/
 .direct-contact i{
     margin-right: 20px;
@@ -136,15 +132,19 @@ i{
 .footer a:hover i{
     color: white;
 }
-.cv, .sub-btn{
+.quick-link a{
+    text-decoration: none;
+    color: white;
+}
+.quick-link ul li{
+    margin-bottom: 10px;
+}
+.cv, .sub-btn, .review-btn{
     background-color: crimson;
     color: white;
 }
-.cv:hover{
+.cv:hover, .sub-btn:hover, .review-btn:hover{
     background-color: #ff002f !important;
-}
-.sub-btn:hover{
-    background-color: #ff002f;
 }
 .msg-form input, .msg-form textarea{
     background: #2f2e2e;

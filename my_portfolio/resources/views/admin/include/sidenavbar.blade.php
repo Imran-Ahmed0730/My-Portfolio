@@ -122,7 +122,10 @@
                             <div class="collapse " id="sidebarForms">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="forms-elements.html">Manage Review</a>
+                                        <a class="nav-link" href="{{route('review.manage')}}">Manage Reviews</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{route('messages.manage')}}">Manage Messages</a>
                                     </li><!--end nav-item-->
                                 </ul><!--end nav-->
                             </div><!--end sidebarForms-->
