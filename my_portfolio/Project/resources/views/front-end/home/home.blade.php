@@ -171,7 +171,7 @@
             <div class="owl-carousel owl-theme">
                 @foreach($reviews as $review)
                     <div class="item">
-                        <div class="card bg-dark">
+                        <div class="card bg-dark"v style="height: 300px !important;">
                             <div class="card-header text-center">
                                 <i class="bi bi-quote" style="font-weight: 900; font-size: 80px"></i>
                             </div>
