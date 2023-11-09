@@ -168,9 +168,10 @@ i{
     background: #2f2e2e;
     border: none;
     outline: none;
+    color: gray !important;
 }
-.msg-form input::placeholder, .msg-form textarea{
-    color: gray;
+.msg-form input::placeholder, .msg-form textarea::placeholder{
+    color: gray !important;
 }
 .copyright{
     color:#A9A9A9;
