@@ -21,6 +21,7 @@
                     <span class="mx-3"><a href="https://www.linkedin.com/in/imran-ahmed-aa7b2b1ab" target="_blank"  class="btn" title="Linkedin"><i class="bi bi-linkedin"></i></a></span>
                     <span class=""><a href="https://github.com/Imran-Ahmed0730" class="btn" target="_blank" title="Github"><i class="bi bi-github"></i></a></span>
                 </p>
+{{--                <a href="{{route('resume')}}" class="cv btn">Download CV</a>--}}
                 <a href="{{asset('front-end-assets')}}/Imran Ahmed Cv.pdf" class="cv btn">Download CV</a>
             </div>
             <div class="col-md-5 msg-form mb-5">

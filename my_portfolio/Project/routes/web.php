@@ -7,11 +7,15 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\SkillController;
+use App\Http\Controllers\TrainingController;
+use App\Http\Controllers\EducationController;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/review/post', [ReviewController::class,'index'])->name('review');
 Route::post('/message/send', [MessageController::class,  'index'])->name('message');
+Route::get('/resume', [HomeController::class, 'resume'])->name('resume');
 
 Route::middleware([
     'auth:sanctum',
@@ -43,4 +47,28 @@ Route::middleware([
     Route::get('messages/manage', [MessageController::class, 'manage'])->name('messages.manage');
     Route::post('messages/remove', [MessageController::class, 'remove'])->name('messages.remove');
     Route::get('messages/status/{id}', [MessageController::class, 'status'])->name('messages.status');
+
+    //Training Module
+    Route::get('certification/add', [TrainingController::class, 'index'])->name('certification.add');
+    Route::post('certification/add', [TrainingController::class, 'add'])->name('certification.new');
+    Route::get('certification/manage', [TrainingController::class, 'manage'])->name('certification.manage');
+    Route::get('certification/edit/{id}', [TrainingController::class, 'edit'])->name('certification.edit');
+    Route::post('certification/update', [TrainingController::class, 'update'])->name('certification.update');
+    Route::post('certification/remove', [TrainingController::class, 'remove'])->name('certification.remove');
+
+    //Skill Module
+    Route::get('skill/add', [SkillController::class, 'index'])->name('skill.add');
+    Route::post('skill/add', [SkillController::class, 'add'])->name('skill.new');
+    Route::get('skill/manage', [SkillController::class, 'manage'])->name('skill.manage');
+    Route::get('skill/edit/{id}', [SkillController::class, 'edit'])->name('skill.edit');
+    Route::post('skill/update', [SkillController::class, 'update'])->name('skill.update');
+    Route::post('skill/remove', [SkillController::class, 'remove'])->name('skill.remove');
+
+    //education Module
+    Route::get('education/add', [EducationController::class, 'index'])->name('education.add');
+    Route::post('education/add', [EducationController::class, 'add'])->name('education.new');
+    Route::get('education/manage', [EducationController::class, 'manage'])->name('education.manage');
+    Route::get('education/edit/{id}', [EducationController::class, 'edit'])->name('education.edit');
+    Route::post('education/update', [EducationController::class, 'update'])->name('education.update');
+    Route::post('education/remove', [EducationController::class, 'remove'])->name('education.remove');
 });

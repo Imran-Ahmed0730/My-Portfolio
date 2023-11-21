@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Education;
 use App\Models\Project;
 use App\Models\Review;
+use App\Models\Skill;
+use App\Models\Training;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -11,8 +14,15 @@ class HomeController extends Controller
     public function index(){
         return view('front-end.home.home', [
             'projects'=>Project::all()->sortBy('id'),
+            'degrees'=>Education::all()->sortByDesc('id'),
+            'techSkills'=>Skill::where('skill_type', 1)->get(),
+            'softSkills'=>Skill::where('skill_type', 2)->get(),
+            'certifications'=> Training::all()->sortByDesc('id'),
             'reviews'=>Review::where('status', 1)->get()
         ]);
+    }
+    public function resume(){
+        return view('front-end.resume.resume');
     }
 //    public function details($id){
 ////        return Project::find($id);

@@ -19,13 +19,13 @@
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
 
-                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Uikit" data-bs-trigger="hover">
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Training & Education" data-bs-trigger="hover">
                         <a href="#MetricaUikit" id="uikit-tab" class="nav-link">
                             <i class="ti ti-medal menu-icon"></i>
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
 
-                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Pages" data-bs-trigger="hover">
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Skills" data-bs-trigger="hover">
                         <a href="#MetricaPages" id="pages-tab" class="nav-link">
                             <i class="ti ti-chart-bar menu-icon"></i>
                         </a><!--end nav-link-->
@@ -150,10 +150,10 @@
                             <div class="collapse " id="sidebarAdvancedUI">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="advanced-animation.html">Add Certification</a>
+                                        <a class="nav-link" href="{{route('certification.add')}}">Add Certification</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
-                                        <a class="nav-link" href="advanced-clipboard.html">Manage Certification</a>
+                                        <a class="nav-link" href="{{route('certification.manage')}}">Manage Certification</a>
                                     </li><!--end nav-item-->
 
                                 </ul><!--end nav-->
@@ -168,10 +168,10 @@
                             <div class="collapse " id="sidebarForms">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="forms-elements.html">Add Degree</a>
+                                        <a class="nav-link" href="{{route('education.add')}}">Add Degree</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
-                                        <a class="nav-link" href="forms-advanced.html">Manage Degree</a>
+                                        <a class="nav-link" href="{{route('education.manage')}}">Manage Degree</a>
                                     </li><!--end nav-item-->
                                 </ul><!--end nav-->
                             </div><!--end sidebarForms-->
@@ -195,10 +195,10 @@
                             <div class="collapse " id="sidebarElements">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="ui-alerts.html">Add Skill</a>
+                                        <a class="nav-link" href="{{route('skill.add')}}">Add Skill</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
-                                        <a class="nav-link" href="ui-avatar.html">Manage Skill</a>
+                                        <a class="nav-link" href="{{route('skill.manage')}}">Manage Skill</a>
                                     </li><!--end nav-item-->
                                 </ul><!--end nav-->
                             </div><!--end sidebarElements-->

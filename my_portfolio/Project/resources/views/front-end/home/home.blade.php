@@ -50,42 +50,42 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="tech_skill" role="tabpanel" aria-labelledby="home-tab">
                             <ul>
-                                <li><span>Programming Language: </span><br>PHP, Python, C.</li>
-                                <li><span>Web Development: </span><br>HTML5, CSS3, JavaScript, jQuery, Ajax.</li>
-                                <li><span>Framework: </span><br>Bootstrap-5, Laravel</li>
-                                <li><span>Database Management: </span><br>MySQL</li>
+                                @foreach($techSkills as $skill)
+                                    <li><span>{{$skill->name}}: </span><br>{{$skill->description}}.</li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="soft_skill" role="tabpanel" aria-labelledby="home-tab">
                             <ul>
-                                <li><i class="bi bi-chevron-double-right"></i>Time Management</li>
-                                <li><i class="bi bi-chevron-double-right"></i>Team Collaboration</li>
-                                <li><i class="bi bi-chevron-double-right"></i>Fluency in Speaking in Bangla and English</li>
+                                @foreach($softSkills as $skill)
+                                    <li><i class="bi bi-chevron-double-right"></i>{{$skill->name}}</li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="certification" role="tabpanel" aria-labelledby="certification-tab">
                             <ul>
-                                <li><b>PHP with Laravel Framework</b> (January, 2023 - April, 2023)<br><span>From: </span>BASIS SEIP, Dhaka, Bangladesh.</li>
-                                <li><b>Ecommerce Website Development</b> (August 2023 - October 2023)<br><span>From: </span>AI Software Solutions, Dhaka, Bangladesh.</li>
+                                @foreach($certifications as $certificate)
+                                    <li>
+                                        <b>{{$certificate->name}}</b>
+                                        ( {{date('M, Y', strtotime($certificate->starting_date))}}
+                                        @if($certificate->ending_date)
+                                             - {{date('M, Y', strtotime($certificate->ending_date))}}
+                                        @endif
+                                        )
+                                        <br><span>
+                                        From: </span>{{$certificate->institution}}, {{$certificate->address}}.</li>
+                                @endforeach
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
                             <ul>
-                                <li>
-                                    <span>BSc in Computer Science & Engineering</span> (2020 - Present)<br>
-                                    <b>Daffodil International University</b><br>
-                                    <b>Result: </b>3.90 out of 4.00
-                                </li>
-                                <li>
-                                    <span>Higher Secondary Certificate </span>(2018 - 2019)<br>
-                                    <b>Firoza Bashar Ideal College</b><br>
-                                    <b>Result: </b>5.00 out of 5.00
-                                </li>
-                                <li>
-                                    <span>Secondary School Certificate </span>(2015 - 2017)<br>
-                                    <b>Firoza Bashar Ideal Institute</b><br>
-                                    <b>Result: </b>5.00 out of 5.00
-                                </li>
+                                @foreach($degrees as $degree)
+                                    <li>
+                                        <span>{{$degree->degree_name}}</span> ({{$degree->Year}})<br>
+                                        <b>{{$degree->institution}}</b><br>
+                                        <b>Result: </b>{{$degree->result}} out of {{$degree->grade_point}}
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
