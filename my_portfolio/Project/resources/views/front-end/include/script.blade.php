@@ -23,9 +23,14 @@
     function validate(){
         var name= document.getElementById('reviewerName').value;
         var comment = document.getElementById('comment').value;
+        var project = document.getElementById('projectId').value;
 
         if (name == '' || comment == ''){
             alert('Name or Comment cannot be Null!!');
+            return false;
+        }
+        if (project == ''){
+            alert('Please Select A Project!!');
             return false;
         }
         else {

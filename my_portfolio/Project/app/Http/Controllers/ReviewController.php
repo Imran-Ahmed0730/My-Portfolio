@@ -13,7 +13,7 @@ class ReviewController extends Controller
     }
     public function manage(){
         return view('admin.review.manage', [
-            'reviews'=>Review::all()
+            'reviews'=>Review::all()->sortByDesc('id')
         ]);
     }
     public function status($id){

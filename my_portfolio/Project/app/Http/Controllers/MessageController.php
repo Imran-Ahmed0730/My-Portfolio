@@ -14,7 +14,7 @@ class MessageController extends Controller
     }
     public function manage(){
         return view('admin.message.manage', [
-            'messages'=>Message::all()
+            'messages'=>Message::all()->sortByDesc('id')
         ]);
     }
 

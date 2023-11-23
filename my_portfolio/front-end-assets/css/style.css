@@ -99,9 +99,6 @@ span{
     transition: height .3s;
 
 }
-.project-img{
-    height: 300px !important;
-}
 .project h3{
     text-decoration: none;
     color: white;

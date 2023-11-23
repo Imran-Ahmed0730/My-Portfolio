@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8" />
-    <title>Admin & Dashboard Template</title>
+    <title>@yield('title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />

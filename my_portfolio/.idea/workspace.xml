@@ -5,25 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aca81b14-9f82-45ab-b910-4247b1b2e36d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/admin/certification/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/admin/certification/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/admin/certification/manage.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/admin/education/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/admin/education/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/admin/education/manage.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/admin/skill/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/admin/skill/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/admin/skill/manage.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/resources/views/front-end/resume/resume.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Project/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/app/Http/Controllers/MessageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/app/Http/Controllers/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/app/Http/Controllers/ReviewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/database/migrations/2023_11_05_200714_create_reviews_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/database/migrations/2023_11_05_200714_create_reviews_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/resources/views/admin/dashboard/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/admin/dashboard/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/resources/views/admin/include/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/admin/include/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/resources/views/admin/include/sidenavbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/admin/include/sidenavbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/resources/views/admin/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/admin/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/resources/views/front-end/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/front-end/home/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/resources/views/front-end/include/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/front-end/include/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/resources/views/front-end/include/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/front-end/include/script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end-assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end-assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end-assets/img/project-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end-assets/img/project-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end-assets/img/project-3.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,20 +167,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Others/Server/htdocs/Projects/My-Portfolio/My-Portfolio/my_portfolio/Project/resources/views/admin",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Others/Server/htdocs/Projects/My-Portfolio/My-Portfolio/my_portfolio/Project/resources/views/admin&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Others\Server\htdocs\Projects\My-Portfolio\My-Portfolio\my_portfolio\Project\resources\views\admin" />
@@ -200,7 +196,10 @@
       <option name="presentableId" value="Default" />
       <updated>1700586387672</updated>
       <workItem from="1700586388864" duration="8395000" />
-      <workItem from="1700596732278" duration="1954000" />
+      <workItem from="1700596732278" duration="2404000" />
+      <workItem from="1700746276076" duration="1830000" />
+      <workItem from="1700748478976" duration="1158000" />
+      <workItem from="1700750165029" duration="3615000" />
     </task>
     <servers />
   </component>

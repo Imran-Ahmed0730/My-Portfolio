@@ -94,15 +94,15 @@
         </div>
     </div>
     <div class="row" id="portfolio">
-        <div class="col-md-12">
+        <div class="">
             <h1 class="mb-4" align="center">My Works</h1>
         </div>
         <div class="row mb-5" >
             @foreach($projects as $project)
                 <div class="col-md-3 mb-3">
-                    <div class="card card-body project">
+                    <div class="card card-body project bg-dark" style="">
                         <a href="{{$project->project_url}}" target="_blank">
-                            <img src="{{$project->image}}" class="img-fluid project-img" alt="...">
+                            <img src="{{$project->image}}" class="project-img" alt="..." style="height: 400px !important; width: 100% !important;">
                             <div class="layer">
                                 <h3>{{$project->title}}</h3>
                                 <i class="bi bi-box-arrow-up-right" style="font-size: 40px; font-weight: bold; color: white"></i>
@@ -121,7 +121,7 @@
                         <div class="card card-body" style="background-color: #121212 !important;">
                             <div class="col-md-10 offset-1">
                                 <h2>Leave A Review</h2>
-                                <form action="{{route('review')}}" onsubmit="return validate()" method="post">
+                                <form action="{{route('review')}}" onsubmit="return validate()" method="post" id="reviewForm">
                                     @csrf
                                     <div class="form-group row mb-3">
                                         <label for="name" class="col-sm-2 col-form-label">Name</label>
@@ -138,7 +138,7 @@
                                     <div class="form-group row mb-3">
                                         <label for="name" class="col-sm-2 col-form-label">Project</label>
                                         <div class="col-sm-10">
-                                            <select name="project_id" id="" class="form-control">
+                                            <select name="project_id" id="projectId" class="form-control">
                                                 <option value="" selected>Select Project</option>
                                                 @foreach($projects as $project)
                                                     <option value="{{$project->id}}">{{$project->title}}</option>
@@ -172,7 +172,7 @@
                 @foreach($reviews as $review)
                     <div class="item">
                         <div class="card bg-dark"v style="height: 300px !important;">
-                            <div class="card-header text-center">
+                            <div class="card-header text-center py-1" style="height: 100px;">
                                 <i class="bi bi-quote" style="font-weight: 900; font-size: 80px"></i>
                             </div>
                             <div class="card-body">
@@ -186,4 +186,7 @@
             </div>
         </div>
     </div>
+    <script>
+
+    </script>
 @endsection

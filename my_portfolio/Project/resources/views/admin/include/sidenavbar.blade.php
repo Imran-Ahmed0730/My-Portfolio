@@ -1,6 +1,6 @@
 <div class="leftbar-tab-menu">
     <div class="main-icon-menu">
-        <a href="index.html" class="logo logo-metrica d-block text-center">
+        <a href="{{route('dashboard')}}" class="logo logo-metrica d-block text-center">
                     <span>
                         <img src="{{asset('/')}}/admin-assets/assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
                     </span>
@@ -50,7 +50,7 @@
     <div class="main-menu-inner">
         <!-- LOGO -->
         <div class="topbar-left">
-            <a href="index.html" class="logo">
+            <a href="{{route('dashboard')}}" class="logo">
                         <span>
                             <img src="{{asset('/')}}/admin-assets/assets/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
                             <img src="{{asset('/')}}/admin-assets/assets/images/logo.png" alt="logo-large" class="logo-lg logo-light">
