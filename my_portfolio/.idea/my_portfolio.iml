@@ -127,6 +127,12 @@
       <excludeFolder url="file://$MODULE_DIR$/Project/vendor/nunomaduro/collision" />
       <excludeFolder url="file://$MODULE_DIR$/Project/vendor/nunomaduro/termwind" />
       <excludeFolder url="file://$MODULE_DIR$/Project/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/Project/vendor/barryvdh/laravel-dompdf" />
+      <excludeFolder url="file://$MODULE_DIR$/Project/vendor/dompdf/dompdf" />
+      <excludeFolder url="file://$MODULE_DIR$/Project/vendor/sabberworm/php-css-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/Project/vendor/masterminds/html5" />
+      <excludeFolder url="file://$MODULE_DIR$/Project/vendor/phenx/php-svg-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/Project/vendor/phenx/php-font-lib" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

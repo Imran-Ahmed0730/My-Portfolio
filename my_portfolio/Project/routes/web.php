@@ -16,6 +16,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/review/post', [ReviewController::class,'index'])->name('review');
 Route::post('/message/send', [MessageController::class,  'index'])->name('message');
 Route::get('/resume', [HomeController::class, 'resume'])->name('resume');
+Route::get('/resume/download', [HomeController::class, 'resumeDownload'])->name('resume.download');
 
 Route::middleware([
     'auth:sanctum',

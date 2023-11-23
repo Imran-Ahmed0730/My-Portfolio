@@ -141,7 +141,7 @@ i{
 .footer{
     background-color: black;
 }
-.footer a:hover {
+.virtual_contact span a:hover {
     background-color: crimson;
 }
 .footer a:hover i{

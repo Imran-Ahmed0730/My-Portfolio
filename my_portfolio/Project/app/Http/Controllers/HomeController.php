@@ -8,6 +8,7 @@ use App\Models\Review;
 use App\Models\Skill;
 use App\Models\Training;
 use Illuminate\Http\Request;
+use PDF;
 
 class HomeController extends Controller
 {
@@ -20,6 +21,12 @@ class HomeController extends Controller
             'certifications'=> Training::all()->sortByDesc('id'),
             'reviews'=>Review::where('status', 1)->get()
         ]);
+    }
+    public function resumeDownload(){
+        $file_path = public_path('Imran-Ahmed-CV.pdf');
+        $file_name = 'Imran Ahmed Resume.pdf';
+
+        return response()->download($file_path, $file_name);
     }
     public function resume(){
         return view('front-end.resume.resume');

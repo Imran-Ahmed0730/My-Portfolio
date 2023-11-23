@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aca81b14-9f82-45ab-b910-4247b1b2e36d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/my_portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my_portfolio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/app/Http/Controllers/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/app/Http/Controllers/MessageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/app/Http/Controllers/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/app/Http/Controllers/ReviewController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/database/migrations/2023_11_05_200714_create_reviews_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/database/migrations/2023_11_05_200714_create_reviews_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/resources/views/admin/dashboard/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/admin/dashboard/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/resources/views/admin/include/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/admin/include/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/resources/views/admin/include/sidenavbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/admin/include/sidenavbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/resources/views/admin/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/admin/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/resources/views/front-end/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/front-end/home/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/resources/views/front-end/include/script.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/front-end/include/script.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Project/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/resources/views/front-end/include/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/resources/views/front-end/include/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end-assets/Imran Ahmed CV.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end-assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end-assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end-assets/img/project-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end-assets/img/project-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end-assets/img/project-3.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +152,12 @@
       <path value="$PROJECT_DIR$/Project/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/Project/vendor/nunomaduro/termwind" />
       <path value="$PROJECT_DIR$/Project/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/Project/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/Project/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/Project/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/Project/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/Project/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/Project/vendor/phenx/php-font-lib" />
     </include_path>
   </component>
   <component name="ProjectId" id="2YUi6y0SYUPEmzhIERZOplb7Hpa" />
@@ -186,6 +187,10 @@
       <recent name="D:\Others\Server\htdocs\Projects\My-Portfolio\My-Portfolio\my_portfolio\Project\resources\views\admin" />
       <recent name="D:\Others\Server\htdocs\Projects\My-Portfolio\My-Portfolio\my_portfolio\Project\resources\views\admin\training" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Others\Server\htdocs\Projects\My-Portfolio\My-Portfolio\my_portfolio\front-end-assets" />
+      <recent name="D:\Others\Server\htdocs\Projects\My-Portfolio\My-Portfolio\my_portfolio\Project\resources\views\front-end\resume" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -200,6 +205,7 @@
       <workItem from="1700746276076" duration="1830000" />
       <workItem from="1700748478976" duration="1158000" />
       <workItem from="1700750165029" duration="3615000" />
+      <workItem from="1700756493877" duration="2392000" />
     </task>
     <servers />
   </component>

@@ -22,7 +22,7 @@
                     <span class=""><a href="https://github.com/Imran-Ahmed0730" class="btn" target="_blank" title="Github"><i class="bi bi-github"></i></a></span>
                 </p>
 {{--                <a href="{{route('resume')}}" class="cv btn">Download CV</a>--}}
-                <a href="{{asset('front-end-assets')}}/Imran Ahmed Cv.pdf" class="cv btn">Download CV</a>
+                <a href="{{route('resume.download')}}" class="cv btn">Download CV</a>
             </div>
             <div class="col-md-5 msg-form mb-5">
                 <h2 class="mb-3">Message Me</h2>
