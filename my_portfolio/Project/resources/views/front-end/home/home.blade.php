@@ -140,6 +140,7 @@
                                         <div class="col-sm-10">
                                             <select name="project_id" id="projectId" class="form-control">
                                                 <option value="" selected>Select Project</option>
+                                                <option value="0">Personal Portfolio</option>
                                                 @foreach($projects as $project)
                                                     <option value="{{$project->id}}">{{$project->title}}</option>
                                                 @endforeach
